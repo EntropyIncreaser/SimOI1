@@ -1,0 +1,16 @@
+!!python/unicode 'args': {!!python/unicode 'q': 300000, !!python/unicode 'x': '2^{60}'}
+!!python/unicode 'compile': {!!python/unicode 'c': !!python/unicode '-lm', !!python/unicode 'cpp': !!python/unicode '-lm',
+  !!python/unicode 'java': !!python/unicode '', !!python/unicode 'pas': !!python/unicode '',
+  !!python/unicode 'py': !!python/unicode ''}
+!!python/unicode 'data': []
+!!python/unicode 'folder': !!python/unicode 'problem'
+!!python/unicode 'memory limit': !!python/unicode '256 MB'
+!!python/unicode 'name': fenwick
+!!python/unicode 'partial score': false
+!!python/unicode 'pre': []
+!!python/unicode 'samples': []
+!!python/unicode 'time limit': 1.0
+!!python/unicode 'title': {!!python/unicode 'zh-cn': 树状数组}
+!!python/unicode 'type': !!python/unicode 'program'
+!!python/unicode 'users': {}
+!!python/unicode 'version': 2
