@@ -1,8 +1,36 @@
-!!python/unicode 'args': {!!python/unicode 'k': 100000, !!python/unicode 'n': 100000}
+!!python/unicode 'args': {!!python/unicode 'k': 200000, !!python/unicode 'n': 100000}
 !!python/unicode 'compile': {!!python/unicode 'c': !!python/unicode '-lm', !!python/unicode 'cpp': !!python/unicode '-lm',
   !!python/unicode 'java': !!python/unicode '', !!python/unicode 'pas': !!python/unicode '',
   !!python/unicode 'py': !!python/unicode ''}
-!!python/unicode 'data': []
+!!python/unicode 'data':
+- {
+  cases: [1, 2, 3],
+  args: [10, $\le 10$, '']
+}
+- {
+  cases: [4, 5],
+  args: [10, $\le 2\times 10^5$, '']
+}
+- {
+  cases: [6],
+  args: [100000, $= 2$, '']
+}
+- {
+  cases: [7, 8],
+  args: [100000, $= 3$, '']
+}
+- {
+  cases: [9, 10, 11, 12],
+  args: [100000, $\le 2\times 10^5$, '$k$ 是质数']
+}
+- {
+  cases: [13, 14, 15],
+  args: [100000, $\le 2\times 10^5$, '当 $i \neq n$ 时$p_i = i + 1$，$p_n = 1$']
+}
+- {
+  cases: [16, 17, 18, 19, 20],
+  args: [100000, $\le 2\times 10^5$, '']
+}
 !!python/unicode 'folder': !!python/unicode 'problem'
 !!python/unicode 'memory limit': !!python/unicode '256 MB'
 !!python/unicode 'name': cycle

@@ -2,7 +2,23 @@
 !!python/unicode 'compile': {!!python/unicode 'c': !!python/unicode '-lm', !!python/unicode 'cpp': !!python/unicode '-lm',
   !!python/unicode 'java': !!python/unicode '', !!python/unicode 'pas': !!python/unicode '',
   !!python/unicode 'py': !!python/unicode ''}
-!!python/unicode 'data': []
+data:
+- {
+  cases: [1, 2],
+  args: [10, 8]
+}
+- {
+  cases: [3],
+  args: [500, 512]
+}
+- {
+  cases: [4, 5, 6, 7],
+  args: [100000, '2^{20}']
+}
+- {
+  cases: [8, 9, 10],
+  args: [300000, '2^{60}']
+}
 !!python/unicode 'folder': !!python/unicode 'problem'
 !!python/unicode 'memory limit': !!python/unicode '256 MB'
 !!python/unicode 'name': fenwick

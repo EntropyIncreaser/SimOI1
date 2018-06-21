@@ -5,6 +5,8 @@ using namespace std;
 typedef long long ll;
 
 int main() {
+	freopen("fenwick.in", "r", stdin);
+	freopen("fenwick.out", "w", stdout);
 	int n;
 	scanf("%d", &n);
 	while (n--) {
