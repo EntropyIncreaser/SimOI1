@@ -3,30 +3,25 @@
   !!python/unicode 'java': !!python/unicode '', !!python/unicode 'pas': !!python/unicode '',
   !!python/unicode 'py': !!python/unicode ''}
 data:
-- {
-  cases: [1, 2],
-  args: [10, 8]
-}
-- {
-  cases: [3],
-  args: [500, 512]
-}
-- {
-  cases: [4, 5, 6, 7],
-  args: [100000, '2^{20}']
-}
-- {
-  cases: [8, 9, 10],
-  args: [300000, '2^{60}']
-}
+- args: [10, 8]
+  cases: [1, 2]
+- args: [500, 512]
+  cases: [3]
+- args: [100000, '2^{20}']
+  cases: [4, 5, 6, 7]
+- args: [300000, '2^{60}']
+  cases: [8, 9, 10]
 !!python/unicode 'folder': !!python/unicode 'problem'
 !!python/unicode 'memory limit': !!python/unicode '256 MB'
 !!python/unicode 'name': fenwick
 !!python/unicode 'partial score': false
-!!python/unicode 'pre': []
-!!python/unicode 'samples': []
+!!python/unicode 'pre':
+- cases: []
+!!python/unicode 'samples':
+- cases: [1, 2, 3]
 !!python/unicode 'time limit': 1.0
 !!python/unicode 'title': {!!python/unicode 'zh-cn': 树状数组}
 !!python/unicode 'type': !!python/unicode 'program'
-!!python/unicode 'users': {}
+!!python/unicode 'users':
+  std: {std/fenwick.cpp: std/fenwick.cpp}
 !!python/unicode 'version': 2
