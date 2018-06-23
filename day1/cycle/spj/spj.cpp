@@ -12,7 +12,7 @@ int main(int argc, char** argv) {
 
 	int n = inf.readInt(1, 100000), k = inf.readInt(1, 200000);
 	for (int i = 1; i <= n; ++i)
-		goal[i] = inf.readInt(1, 100000);
+		goal[i] = inf.readInt(1, n);
 	for (int i = 1; i <= n; ++i) {
 		quitif(vis[goal[i]], _fail, "Wrong input: No two spirits should stay at the same place.");
 		vis[goal[i]] = true;
