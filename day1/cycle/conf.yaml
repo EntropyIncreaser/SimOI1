@@ -22,9 +22,11 @@
 !!python/unicode 'name': cycle
 !!python/unicode 'partial score': false
 !!python/unicode 'pre': []
-!!python/unicode 'samples': []
+!!python/unicode 'samples':
+- cases: [1, 2, 3, 4]
 !!python/unicode 'time limit': 2.0
 !!python/unicode 'title': {!!python/unicode 'zh-cn': 精灵之环}
 !!python/unicode 'type': !!python/unicode 'program'
-!!python/unicode 'users': {}
+!!python/unicode 'users':
+  std: {std/cycle.cpp: std/cycle.cpp}
 !!python/unicode 'version': 2
