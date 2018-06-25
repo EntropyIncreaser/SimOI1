@@ -39,13 +39,11 @@ int main() {
 		if (cyc[d].empty())
 			continue;
 		vector<vector<int> >& cycd = cyc[d];
-		int g = 1, gg;
-		while ((gg = gcd(d, k / g)) != 1)
-			g *= gg;
+		int g = gcd(cycd.size(), k);
 		int j = k / g, a = 1;
+		// assert(gcd(d, j) == 1);
 		while (a * (ll)j % d != 1 % d)
 			++a;
-//		assert(cyc[d].size() % g == 0);
 		for (int ii = 0; ii < cyc[d].size(); ii += g) {
 			for (int ij = 0; ij < g; ++ij) {
 				int ci = ii + ij;
