@@ -70,8 +70,8 @@
 
 `spj.exe 输入文件名 输出文件名 参考答案文件名`
 
-例如，测试第 3 组数据使用以下命令：
+例如，测试第 3 组数据在 `powershell` 里使用以下命令：
 
-`spj.exe cycle3.in cycle3.out cycle3.ans`
+`./spj.exe cycle3.in cycle3.out cycle3.ans`
 
 如果您自己创建了一组输入，并没有参考答案文件，你可以创建一个空文件并且填写在参考答案对应的位置。但是 **spj 并不会帮你检查输入是否有一个合法的解**。

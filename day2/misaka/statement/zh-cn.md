@@ -2,11 +2,9 @@
 
 {{ s('问题描述') }}
 
-一条直线可以被一些点切成两条射线和一些线段。一个平面可以被若干条直线分割成一些片。一个3维空间可以被若干个平面分割成一些空间……
+学园都市是一个有
 
-现在请你帮忙计算在一个 $k$ 维空间中，总共 $n$ 个 $k-1$ 维的截“面”最多可以将这个空间分割成了多少个部分。
 
-答案对 $P = 10^9 + 7$ 取模。
 
 {{ s('形式化命题') }}
 
@@ -35,24 +33,9 @@ $$\left\{ \bigcap_{i = 1}^n B_i \neq \emptyset \middle\vert B \in \{L_1, R_1\} \
 
 {{ self.sample_text() }}
 
-{{ s('sample', 2) }}
-
-{{ self.sample_text() }}
-
-{{ s('sample', 3) }}
-
-{{ self.sample_text() }}
-
-{{ self.title_sample_description() }}
-
-因为篇幅所限，无法给出论述。
-
-{{ s('sample', 4) }}
-
-{{ self.sample_text() }}
 
 {{ s('子任务') }}
 
-对于 $100\%$ 的数据，保证 $k \le {{ tl.hn(prob.args['k']) }}$, $n \le {{ tl.hn(prob.args['k']) }}$
+对于 $100\%$ 的数据，保证 $n \le {{ tl.hn(prob.args['n']) }}$
 
 {{ tbl('data') }}

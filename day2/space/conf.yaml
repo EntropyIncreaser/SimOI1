@@ -1,8 +1,28 @@
-!!python/unicode 'args': {!!python/unicode 'k': 6000000, !!python/unicode 'n': 6000000}
+!!python/unicode 'args': {!!python/unicode 'k': 1000000, !!python/unicode 'n': 1000000}
 !!python/unicode 'compile': {!!python/unicode 'c': !!python/unicode '-lm', !!python/unicode 'cpp': !!python/unicode '-lm',
   !!python/unicode 'java': !!python/unicode '', !!python/unicode 'pas': !!python/unicode '',
   !!python/unicode 'py': !!python/unicode ''}
-!!python/unicode 'data': []
+!!python/unicode 'data':
+- args: [1, 1000000, '$k = n$']
+  cases: [1]
+- args: [1, 1000000, '']
+  cases: [2, 3, 4]
+- args: [2, 5000, '']
+  cases: [5, 6, 7]
+- args: [2, 1000000, '']
+  cases: [8, 9, 10]
+- args: [400, 400, '$k = n$']
+  cases: [11]
+- args: [400, 400, '']
+  cases: [12, 13]
+- args: [1000, 1000, '$k = n$']
+  cases: [14]
+- args: [1000, 1000, '']
+  cases: [15, 16]
+- args: [1000000, 1000000, '$k = n$']
+  cases: [17, 18]
+- args: [1000000, 1000000, '']
+  cases: [19, 20]
 !!python/unicode 'folder': !!python/unicode 'problem'
 !!python/unicode 'memory limit': !!python/unicode '256 MB'
 !!python/unicode 'name': space
