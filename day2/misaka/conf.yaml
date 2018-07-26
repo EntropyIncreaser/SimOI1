@@ -2,7 +2,29 @@
 !!python/unicode 'compile': {!!python/unicode 'c': !!python/unicode '-lm', !!python/unicode 'cpp': !!python/unicode '-lm',
   !!python/unicode 'java': !!python/unicode '', !!python/unicode 'pas': !!python/unicode '',
   !!python/unicode 'py': !!python/unicode ''}
-!!python/unicode 'data': []
+!!python/unicode 'data':
+- args: [1, '']
+  cases: [1]
+- args: [50, '']
+  cases: [2, 3, 4]
+- args: [300, '']
+  cases: [5, 6]
+- args: [500, '']
+  cases: [7, 8]
+- args: [2000, '']
+  cases: [9, 10, 11, 12]
+- args: [50000, '树是一颗二叉树']
+  cases: [13, 14]
+- args: [50000, '树是一条链']
+  cases: [15, 16]
+- args: [50000, '']
+  cases: [17, 18]
+- args: [500000, '树是一条链']
+  cases: [19, 20]
+- args: [500000, '树是一颗菊花']
+  cases: [21, 22]
+- args: [500000, '']
+  cases: [23, 24, 25]
 !!python/unicode 'folder': !!python/unicode 'problem'
 !!python/unicode 'memory limit': !!python/unicode '256 MB'
 !!python/unicode 'name': misaka
