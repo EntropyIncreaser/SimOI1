@@ -2,37 +2,29 @@
 
 {{ s('问题描述') }}
 
-学园都市是一个有
+为了打败一方通行，御坂的妹妹们将要联合起来！她们将会把守在学园都市的风力发电机旁，以将一方通行的能力削弱！
 
-
-
-{{ s('形式化命题') }}
-
-如果你认为空间的概念是模糊的，那么在此处给出本题中对空间严格的数学概念。
-
-你可以认为一个这样的“截面”是在欧式空间 $\mathbb R^k$ 中的一个 $k$ 维向量 $\mathbf a \neq \mathbf 0$ 和实数 $\lambda$ 组成记为 $(\mathbf 
-a, \lambda)$，其“截面”上的点集合即 $H_i = \left\{ \mathbf x \in \mathbb R^k \middle\vert \mathbf a \cdot \mathbf x = \lambda \right\}$，而这对剩余部分的空间产生了一个割 $(L_i, R_i)$ 其中 $L_i = \left\{ \mathbf x \in \mathbb R^k \middle\vert \mathbf a \cdot \mathbf x < \lambda \right\}, R_i = \left\{ \mathbf x \in \mathbb R^k \middle\vert \mathbf a \cdot \mathbf x > \lambda \right\}$。
-
-那么对于整个空间切成的“块”的集族就是
-
-$$\left\{ \bigcap_{i = 1}^n B_i \neq \emptyset \middle\vert B \in \{L_1, R_1\} \times \{L_2, R_2\} \times \cdots \times \{L_n, R_n\} \right\}$$
+学院都市有 $n$ 个风力发电机，而御坂的妹妹恰好也有 $n$ 个，御坂网络的连接方法是一颗树。每个风力发电机有一个功率 $w_i$ ，当一方通行在第 $i$ 个御坂妹妹的地方出现时，所有的御坂都会朝向他发动能力。但御坂妹妹的能力是联合起来才能发动的，每个御坂和另一个御坂都会联合起来产生抵抗一方通行的能量。如果将一方通行所在的位置视为根，则一对姐妹 $u < v$ 联合起来发动的能量是 $w_{\mathrm{lca}(u, v)}$ 。御坂网络发动的总能量就是每一对姐妹的发动能量之和。你要求的就是对于一方通行所在的每一个位置，计算出御坂网络发动的总能量。
 
 {{ s('输入格式') }}
 
 {{ self.input_file() }}
 
-一行两个正整数 $k, n$ 表示维度和截“面”数量。
+一行一个正整数 $n$ 表示风力发电机数量。
+
+接下来一行共 $n$ 个正整数，第 $i$ 个正整数 $w_i$ 表示第 $i$ 个风力发动机的功率。
+
+接下来 $n - 1$ 行每行两个正整数 $u\ v$ 其中 $1 \le u, v \le n$ 表示 $u$ 到 $v$ 有一条道路。
 
 {{ s('输出格式') }}
 
 {{ self.output_file() }}
 
-输出答案。
+输出一行共 $n$ 个整数，第 $i$ 个表示如果一方通行在 $i$ 位置，御坂们联合发出的能量。
 
 {{ s('sample', 1) }}
 
 {{ self.sample_text() }}
-
 
 {{ s('子任务') }}
 

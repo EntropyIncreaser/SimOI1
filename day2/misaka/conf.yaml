@@ -1,4 +1,4 @@
-!!python/unicode 'args': {!!python/unicode 'n': 1000000}
+!!python/unicode 'args': {!!python/unicode 'n': 500000}
 !!python/unicode 'compile': {!!python/unicode 'c': !!python/unicode '-lm', !!python/unicode 'cpp': !!python/unicode '-lm',
   !!python/unicode 'java': !!python/unicode '', !!python/unicode 'pas': !!python/unicode '',
   !!python/unicode 'py': !!python/unicode ''}
