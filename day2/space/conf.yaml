@@ -3,7 +3,7 @@
   !!python/unicode 'java': !!python/unicode '', !!python/unicode 'pas': !!python/unicode '',
   !!python/unicode 'py': !!python/unicode ''}
 !!python/unicode 'data':
-- args: [1, 1000000, '$k = n$']
+- args: [1, 1000000, $k = n$]
   cases: [1]
 - args: [1, 1000000, '']
   cases: [2, 3, 4]
@@ -11,15 +11,15 @@
   cases: [5, 6, 7]
 - args: [2, 1000000, '']
   cases: [8, 9, 10]
-- args: [400, 400, '$k = n$']
+- args: [400, 400, $k = n$]
   cases: [11]
 - args: [400, 400, '']
   cases: [12, 13]
-- args: [1000, 1000, '$k = n$']
+- args: [1000, 1000, $k = n$]
   cases: [14]
 - args: [1000, 1000, '']
   cases: [15, 16]
-- args: [1000000, 1000000, '$k = n$']
+- args: [1000000, 1000000, $k = n$]
   cases: [17, 18]
 - args: [1000000, 1000000, '']
   cases: [19, 20]
@@ -28,9 +28,12 @@
 !!python/unicode 'name': space
 !!python/unicode 'partial score': false
 !!python/unicode 'pre': []
-!!python/unicode 'samples': []
+!!python/unicode 'samples':
+- cases: [1, 2, 3, 4]
 !!python/unicode 'time limit': 1.0
 !!python/unicode 'title': {!!python/unicode 'zh-cn': 空间切割}
 !!python/unicode 'type': !!python/unicode 'program'
-!!python/unicode 'users': {}
+!!python/unicode 'users':
+  part: {part/space_dp.cpp: code/dp.cpp, part/space_eq.cpp: code/eq.cpp}
+  std: {std/space.cpp: code/std.cpp}
 !!python/unicode 'version': 2
