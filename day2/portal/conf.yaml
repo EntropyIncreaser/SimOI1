@@ -1,23 +1,24 @@
-!!python/unicode 'args': {!!python/unicode 'n': 10000, !!python/unicode 'm': 100000, !!python/unicode 't': 100000}
-!!python/unicode 'compile': {!!python/unicode 'c': !!python/unicode '-lm',
-  !!python/unicode 'cpp': !!python/unicode '-lm', !!python/unicode 'java': !!python/unicode '',
-  !!python/unicode 'pas': !!python/unicode '', !!python/unicode 'py': !!python/unicode ''}
+!!python/unicode 'args': {!!python/unicode 'm': 100000, !!python/unicode 'n': 10000,
+  !!python/unicode 't': 100000}
+!!python/unicode 'compile': {!!python/unicode 'c': !!python/unicode '-lm', !!python/unicode 'cpp': !!python/unicode '-lm',
+  !!python/unicode 'java': !!python/unicode '', !!python/unicode 'pas': !!python/unicode '',
+  !!python/unicode 'py': !!python/unicode ''}
 !!python/unicode 'data':
-- args: [200, 200, '$t = 1$']
+- args: [200, 200, $t = 1$]
   cases: [1, 2]
 - args: [200, 200, '']
   cases: [3, 4, 5]
-- args: [1000, 1000, '$t = 0$']
+- args: [1000, 1000, $t = 0$]
   cases: [6, 7]
 - args: [1000, 1000, '']
   cases: [8, 9, 10]
-- args: [10000, 100000, '$t = 0$']
+- args: [10000, 100000, $t = 0$]
   cases: [11, 12, 13]
 - args: [10000, 100000, '$u = v, x = y$']
   cases: [14, 15]
-- args: [10000, 100000, '$u = v$']
+- args: [10000, 100000, $u = v$]
   cases: [16, 17]
-- args: [10000, 100000, !!python/unicode '任意位置最多有 5 个传送门经过']
+- args: [10000, 100000, 任意位置最多有 5 个传送门经过]
   cases: [18, 19, 20]
 - args: [10000, 100000, '']
   cases: [21, 22, 23, 24, 25]
@@ -26,9 +27,11 @@
 !!python/unicode 'name': portal
 !!python/unicode 'partial score': false
 !!python/unicode 'pre': []
-!!python/unicode 'samples': []
+!!python/unicode 'samples':
+- cases: [1, 2, 3, 4]
 !!python/unicode 'time limit': 1.0
 !!python/unicode 'title': {!!python/unicode 'zh-cn': 传送门}
 !!python/unicode 'type': !!python/unicode 'program'
-!!python/unicode 'users': {}
+!!python/unicode 'users':
+  std: {std/portal: code/std.cpp}
 !!python/unicode 'version': 2
