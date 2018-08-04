@@ -26,6 +26,24 @@
 
 {{ self.sample_text() }}
 
+{{ s('sample', 2) }}
+
+{{ self.sample_file() }}
+
+该组样例的数据范围同第 7 个测试点。
+
+{{ s('sample', 3) }}
+
+{{ self.sample_file() }}
+
+该组样例的数据范围同第 13 个测试点。
+
+{{ s('sample', 4) }}
+
+{{ self.sample_file() }}
+
+该组样例的数据范围同第 23 个测试点。
+
 {{ s('子任务') }}
 
 对于 $100\%$ 的数据，保证 $n \le {{ tl.hn(prob.args['n']) }}$

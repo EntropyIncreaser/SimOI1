@@ -31,7 +31,6 @@ int dis[V];
 vector<pair<int, int> > adj[V];
 
 void adde(int u, int v, int w) {
-	printf("w(%d, %d) = %d\n", u, v, w);
 	adj[u].push_back(make_pair(v, w));
 }
 
